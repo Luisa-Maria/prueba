@@ -4,7 +4,7 @@ export const Navbar = ( )=>{
 return(
 <div>
 
-<ul className="nav nav-tabs">
+<ul className="nav nav-tabs navbar-dark bg-dark">
   <li className="nav-item">
     <Link to="/rickandmorty" className="nav-link ">Rick and Morty</Link>
   </li>

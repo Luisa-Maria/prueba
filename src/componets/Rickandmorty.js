@@ -36,8 +36,8 @@ export const Rickandmorty = () => {
     }, [search])
 
     return (
-        <div>
-            <nav class="navbar navbar-light bg-light">
+        <div className="background">
+            <nav class="navbar navbar-dark bg-dark">
                 <div class="container-fluid">
                     <form class="d-flex">
                         <input value={search} onChange={(event) => setSearch(event.target.value)} class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
@@ -60,11 +60,11 @@ export const Rickandmorty = () => {
                                     <div className="col-md-6">
                                         <div className="card-body uno">
                                             <blockquote class="blockquote">
-                                                <h5 className="card-title"><u> Nombre:</u><div>{personaje.name}</div></h5>
-                                                <p className="card-text">  <u> Origen:</u> {personaje.origin.name}</p>
-                                                <p className="card-text"> <u>Estado: </u>{personaje.status}</p>
-                                                <p className="card-text"><u>Especie:</u>{personaje.species}</p>
-                                                <p className="card-text"><u>Genero: </u>{personaje.gender}</p>
+                                                <h5 className="card-title"><b> Nombre:</b><div>{personaje.name}</div></h5>
+                                                <p className="card-text">  <b> Origen:</b> {personaje.origin.name}</p>
+                                                <p className="card-text"> <b>Estado: </b>{personaje.status}</p>
+                                                <p className="card-text"><b>Especie:</b>{personaje.species}</p>
+                                                <p className="card-text"><b>Genero: </b>{personaje.gender}</p>
                                             </blockquote>
 
 

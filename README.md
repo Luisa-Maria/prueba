@@ -1,73 +1,65 @@
 # Prueba Finamiga
 
 como arrancar la aplicacion
-# Getting Started with Create React App
+# Como Iniciar  
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
-In the project directory, you can run:
+En el proyecto, puedes arrancar:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Ejecuta la aplicación en el modo de desarrollo. \
+Abra [http: // localhost: 3000] (http: // localhost: 3000) para verlo en el navegador.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+De este modo se cargara la pagina y se podra visualizar en el navegador 
 
-### `npm test`
+### `App.js`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Primer componente  donde se realizan las importaciones que se usaran dentro del proyecto.
+#### `function App`
+funcion render que se encarga de mostrar el navbar y redireccionar cada modulo
 
-### `npm run build`
+### `Navbar.js`
+En este componente se realiza la creacion del navbar y la division de los modulos que lo conformaran.
+ Un apunte importante para enlazar un elemento HTML a una clase de CSS usaremos en todo el proyecto la propiedad className y no class. Esto es para que React no confunda las clases de JavaScript con las de CSS.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### `Rickandmorty.js`
+Componente y primer modulo del navbar, en el se desarrollara todo lo que tendra esta pagina.
+se empieza importando las dependencias a usarse de la libreria de React
+#### `const Rickandmorty`:
+Una funcion constante donde se crearan 3 constantes para almacenar info y revisar su estado.
+ 
+ ### ` useEffect`:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+ #### ` function Data`
+ Una funcion flecha que contiene varias constantes donde se establece la conexion con la Api para consumirla. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ se setean los personajes y se filtran para mostrarlos.
 
-### `npm run eject`
+ Luego se retorna las etiquetas div que contienen todo el diseño visual.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+ ### `libreta.js`
+ Este es el segundo modulo que compone el navbar , se incia exportando todas las dependencias que se utilizaran.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### `const libreta`:
+una funcion flecha donde se crean 3  constantes para capturar datos y ver su estado
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+ ### ` useEffect`:
+ Contiene un set de los contactos que se parsean con un JSON para poder almacenarlos en el LocalStorage
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+#### `const submitForm`:
+Contiene un sí condicional donde dependiendo si se registra un contacto este lo setea y lo almacena en una nueva lista en el localstorage
 
-## Learn More
+#### `const editValue`:
+En esta constante se limpian los campos del formulario una vez se hayan registrado
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Por ultimo el `Return`contiene el diseño del formulario y la lista de contactos
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+ 
+ 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Prueba_Tecnica
